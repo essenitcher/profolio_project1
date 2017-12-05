@@ -1,11 +1,9 @@
+
+/* General */
 body {
   font-family : "Lucida Console", Monaco, monospace;
   color: #424242;
   max-width : 800px;
-}
-
-header, div {
-  box-sizing : border-box;
 }
 
 /*
@@ -17,8 +15,7 @@ Header
     margin : 0 auto;/*make it centered*/
 }
 
-.header__logo {
-	height : 72px;
+.header-logo {
 	margin-right : 1em;
 	vertical-align : middle;
 	margin-top : 12px;
@@ -26,7 +23,7 @@ Header
 
 /* main body */
 
-.main__image {
+.main-image {
 	border-top : 5px solid;
 	border-color : #7d97ad;
 	padding-top : 20px;
@@ -34,30 +31,45 @@ Header
 	width: 100%;
 }
 
-.itemProject {
-    width : 246px;
-    margin : 10px;
-	text-align : center;
-}
 
-.img_prj{
+.img-prj{
 	width : 100%;
 }
 
 
-.title2 {
+/** list of projects */
+
+.title-work {
 	color : #7d97ad;
 	font-size: 2em;
 }
 
-.itemTitle {
+.item-title {
 	text-align : center;
 	font-size : 2em;
 	margin : 10px;
 }
 
-.itemURL {
+.item-url {
 	font-size : 0.6em;
 	text-align : center;
 }
 
+/** footer */
+.footer {
+	background : #061D25;
+	padding : 10px 0;
+}
+.footer a {
+	color : #70726F;
+	font-size : 20px;
+	padding : 10px;
+	border-right : 1px solid #70726F;
+	transition : all .5s ease;
+}
+.footer a:first-child {
+	border-left : 1px solid #70726F;
+}
+.footer a:hover {
+	color : white;
+}
