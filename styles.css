@@ -1,6 +1,7 @@
 body {
   font-family : "Lucida Console", Monaco, monospace;
   color: #424242;
+  max-width : 800px;
 }
 
 header, div {
@@ -11,19 +12,9 @@ header, div {
 Header
 */
 
-.header {
-	display:  flex;
-	flex-direction : row;
-	min-height : 56px;
-	justify-content : space-between;
-	transition : min-height 0.3s;
-	width : 100%;
-	max-width : 800px;
-}
-
-.header> .left {
-	width : 15%;
-	padding : 20px;
+.container{
+    max-width : 800px;
+    margin : 0 auto;/*make it centered*/
 }
 
 .header__logo {
@@ -33,56 +24,26 @@ Header
 	margin-top : 12px;
 }
 
-.header__title {
-	font-weight : 300;
-	font-size : 3em;
-	color : #212121;
-	float : right;
-	height : 70%;
-	margin-top : 12px;
-	margin-bottom : 0px;
-	padding : 20px;
-}
-
-.header__subtitle {
-	font-weight : 100;
-	font-size : 1em;
-	color : #212121;
-	float : right;
-	height : 30%;
-	margin : 0px;
-	padding-right : 20px;
-}
-
-.header> .flex-container_text {
-	width : 85%;
-	display : flex;
-	flex-direction : column;
-	justify-content : flex-start;
-	text-align : right;
-	vertical-align : middle;
-	height : 100%;
-}
-
 /* main body */
 
 .main__image {
 	border-top : 5px solid;
 	border-color : #7d97ad;
 	padding-top : 20px;
-	max-width : 800px;
+	padding-bottom : 20px;
+	width: 100%;
 }
 
 .itemProject {
-	float : left;
     width : 246px;
     margin : 10px;
 	text-align : center;
 }
 
-.item__image {
-	width : 246px;
+.img_prj{
+	width : 100%;
 }
+
 
 .title2 {
 	color : #7d97ad;
@@ -90,10 +51,13 @@ Header
 }
 
 .itemTitle {
+	text-align : center;
 	font-size : 2em;
 	margin : 10px;
 }
 
 .itemURL {
-	font-size : 0.7em;
+	font-size : 0.6em;
+	text-align : center;
 }
+
