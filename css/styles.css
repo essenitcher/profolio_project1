@@ -1,18 +1,17 @@
-
 /* General */
 body {
   font-family : "Lucida Console", Monaco, monospace;
   color: #424242;
-  max-width : 800px;
 }
 
 /*
 Header
 */
-
-.container{
-    max-width : 800px;
-    margin : 0 auto;/*make it centered*/
+@media (min-width: 810 px) {
+      .container {
+           max-width: 90%;
+           margin: 0 auto;
+      }
 }
 
 .header-logo {
@@ -69,6 +68,7 @@ Header
 }
 .footer a:first-child {
 	border-left : 1px solid #70726F;
+	
 }
 .footer a:hover {
 	color : white;
